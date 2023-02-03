@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { MyCounter } from 'ne-library-ui'
+import { MyCounter, Button } from 'ne-library-ui'
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
@@ -9,6 +9,10 @@ root.render(
       <MyCounter />
     </div>
     <hr />
+    <div>
+      <h2>Button</h2>
+      <Button onClick={() => console.log('PAULO')} />
+    </div>
     <div>
       <h2>Counter with predefined value</h2>
       <MyCounter value={5} />
