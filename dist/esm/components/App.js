@@ -10,7 +10,7 @@ var MyCounter = function (_a) {
     };
     return (React.createElement("div", null,
         React.createElement("h1", null,
-            "Counter: ",
+            "Contador: ",
             counter),
         React.createElement("button", { onClick: onMinus }, "-"),
         React.createElement("button", { onClick: onPlus }, "+")));
