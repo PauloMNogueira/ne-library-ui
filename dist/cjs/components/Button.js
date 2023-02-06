@@ -1,20 +1,15 @@
 "use strict";
 exports.__esModule = true;
 var tslib_1 = require("tslib");
-var react_1 = tslib_1.__importStar(require("react"));
+var react_1 = tslib_1.__importDefault(require("react"));
 var styled_components_1 = require("styled-components");
-var Theme_1 = require("../Theme");
+var start_1 = require("../Theme/start");
 var ButtonComponent_1 = tslib_1.__importDefault(require("./ButtonComponent"));
 var Button = function (_a) {
     var onClick = _a.onClick;
-    var _b = (0, react_1.useState)(Theme_1.riomarRecifeTheme), theme = _b[0], setTheme = _b[1];
-    var updateTheme = function () {
-        setTheme(Theme_1.fortalezaTheme);
-    };
+    var theme = (0, start_1.StartTheme)().getTheme();
     return (react_1["default"].createElement(styled_components_1.ThemeProvider, { theme: theme },
-        react_1["default"].createElement(ButtonComponent_1["default"], { onClick: onClick }),
-        react_1["default"].createElement("div", null,
-            react_1["default"].createElement("button", { onClick: updateTheme }, "Trocar para tema fortaleza"))));
+        react_1["default"].createElement(ButtonComponent_1["default"], { onClick: onClick })));
 };
 exports["default"] = Button;
 //# sourceMappingURL=Button.js.map
