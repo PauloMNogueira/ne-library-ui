@@ -14,6 +14,6 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "ne-library-ui": "^1.3.1"
+    "ne-library-ui": "^1.4.0"
   }
 }
