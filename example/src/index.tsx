@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { MyCounter, Button, BuildTheme } from 'ne-library-ui'
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
-BuildTheme({ shopping: 'fortaleza' })
+
 root.render(
   <React.StrictMode>
     <div>

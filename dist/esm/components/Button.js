@@ -1,12 +1,12 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { StartTheme } from '../Theme/start';
+import { fortalezaTheme } from '../Theme/fortalezaTheme';
 import ButtonComponent from './ButtonComponent';
 var Button = function (_a) {
+    // const theme = StartTheme().getTheme()
     var onClick = _a.onClick;
-    var theme = StartTheme().getTheme();
-    return (React.createElement(ThemeProvider, { theme: theme },
-        React.createElement(ButtonComponent, { onClick: onClick })));
+    return (React.createElement(ThemeProvider, { theme: fortalezaTheme },
+        React.createElement(ButtonComponent, { onClick: onClick }, "CLIQUE")));
 };
 export default Button;
 //# sourceMappingURL=Button.js.map
